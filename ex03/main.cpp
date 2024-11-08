@@ -33,6 +33,7 @@ int main(void){
     s1.takeDamage(49);
     s1.beRepaired(1);
     s1.attack("someone");
+    s1.guardGate();
     std::cout << std::endl;
 
     std::cout << "=========== FragTrap Tests ===========" << std::endl;
@@ -49,5 +50,17 @@ int main(void){
     f1.beRepaired(1);
     f1.attack("someone");
     f1.highFivesGuys();
-    return 0;
+    std::cout << std::endl;
+
+    std::cout << "=========== DiamondTrap Tests ===========" << std::endl;
+	DiamondTrap	d0;
+	DiamondTrap	d1("David Jack");
+
+	for (int i = 0; i < 50; i++)
+		d1.attack("a random ClapTrap");
+	d1.whoAmI();
+	d1.guardGate();
+	d1.highFivesGuys();
+
+	return 0;
 }

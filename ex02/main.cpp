@@ -32,6 +32,7 @@ int main(void){
     s1.takeDamage(49);
     s1.beRepaired(1);
     s1.attack("someone");
+    s1.guardGate();
     std::cout << std::endl;
 
     std::cout << "=========== FragTrap Tests ===========" << std::endl;
